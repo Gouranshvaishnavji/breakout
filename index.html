@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>2D Breakout Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakout Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1 id="score">0</h1>
-<div class="grid"></div>
+    <h1>Breakout Game</h1>
+    <h2>Score: <span id="score">0</span></h2>
 
-<script src="index.js"></script>
+    <div class="controls">
+        <button id="startButton">Start</button>
+        <button id="pauseButton">Pause</button>
+        <button id="resetButton">Reset</button>
+
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty">
+            <option value="50">Easy</option>
+            <option value="30">Medium</option>
+            <option value="15">Hard</option>
+        </select>
+    </div>
+
+    <div class="grid"></div>
+
+    <script src="index.js"></script>
 </body>
 </html>
